@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Gallery</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+</head>
+<body>
+   <div class="container">
+   	<div class="close">
+   		<span>&times</span>
+   	</div>
+   	 <div class="gallery">
+   	 	<div class="zoom"><img src="image/image-1.jpg" alt="image" title="image"></div>
+   	 	<div class="zoomDois"><img src="image/image-2.jpg" alt="image" title="image"></div>
+   	 	<div class="zoomTres"><img src="image/image-3.jpg" alt="image" title="image"></div>
+   	 	<div class="zoomQuatro"><img src="image/image-4.jpg" alt="image" title="image"></div>
+   	 	<div class="zoomCinco"><img src="image/image-5.jpg" alt="image" title="image"></div>
+   	 	<div class="zoomSeis"><img src="image/image-6.jpg" alt="image" title="image"></div>
+   	 	<div class="zoomSete"><img src="image/image-7.jpg" alt="image" title="image"></div>
+   	 	<div class="zoomOito"><img src="image/image-8.jpg" alt="image" title="image"></div>
+   	 	<div class="zoomNove"><img src="image/image-9.jpg" alt="image" title="image"></div>
+   	 	<div class="zoomDez"><img src="image/image-10.jpg" alt="image" title="image"></div>
+   	 </div>
+   </div>
+   	  <div class="prev"><</div>
+   	  <div class="next">></div>
+   <script type="text/javascript">
+   	    let cria = document.createElement('div')
+   	    let img = document.createElement('img')
+   	    let close = document.querySelector('.close')
+   	    let next = document.querySelector('.next')
+   	    let prev = document.querySelector('.prev')
+        let imagem = document.querySelector('.zoom');
+        let imagemDois = document.querySelector('.zoomDois');
+        let imagemTres = document.querySelector('.zoomTres');
+        let imagemQuatro = document.querySelector('.zoomQuatro');
+        let imagemCinco = document.querySelector('.zoomCinco');
+        let imagemSeis = document.querySelector('.zoomSeis');
+        let imagemSete = document.querySelector('.zoomSete');
+        let imagemOito = document.querySelector('.zoomOito');
+        let imagemNove = document.querySelector('.zoomNove');
+        let imagemDez = document.querySelector('.zoomDez');
+   
+        // Carrega o evento junto da página!
+        window.onload = function(){
+        close.setAttribute('style', 'display: none')
+        next.setAttribute('style', 'display: none')
+        prev.setAttribute('style', 'display: none')
+
+        imagem.addEventListener('click', function(){
+        	//Appendchild tem que ser inserido localmente!
+        	let corpo = document.querySelector('body').appendChild(cria)
+        	cria.classList.add("containerDois");
+        	cria.appendChild(img);
+        	img.src = "image/image-1.jpg";
+        	close.setAttribute('style', 'display: block');
+        	next.setAttribute('style', 'display: block');
+        	prev.setAttribute('style', 'display: block');
+        })
+        imagemDois.addEventListener('click', function(){
+        	//Appendchild tem que ser inserido localmente!
+        	let corpo = document.querySelector('body').appendChild(cria)
+        	cria.classList.add("containerDois");
+        	cria.appendChild(img);
+        	img.src = "image/image-2.jpg";
+        	close.setAttribute('style', 'display: block');
+        	next.setAttribute('style', 'display: block');
+        	prev.setAttribute('style', 'display: block');
+        })
+           imagemTres.addEventListener('click', function(){
+        	//Appendchild tem que ser inserido localmente!
+        	let corpo = document.querySelector('body').appendChild(cria)
+        	cria.classList.add("containerDois");
+        	cria.appendChild(img);
+        	img.src = "image/image-3.jpg";
+        	close.setAttribute('style', 'display: block');
+        	next.setAttribute('style', 'display: block');
+        	prev.setAttribute('style', 'display: block');
+        })
+              imagemQuatro.addEventListener('click', function(){
+        	//Appendchild tem que ser inserido localmente!
+        	let corpo = document.querySelector('body').appendChild(cria)
+        	cria.classList.add("containerDois");
+        	cria.appendChild(img);
+        	img.src = "image/image-4.jpg";
+        	close.setAttribute('style', 'display: block');
+        	next.setAttribute('style', 'display: block');
+        	prev.setAttribute('style', 'display: block');
+        })
+              imagemCinco.addEventListener('click', function(){
+        	//Appendchild tem que ser inserido localmente!
+        	let corpo = document.querySelector('body').appendChild(cria)
+        	cria.classList.add("containerDois");
+        	cria.appendChild(img);
+        	img.src = "image/image-5.jpg";
+        	close.setAttribute('style', 'display: block');
+        	next.setAttribute('style', 'display: block');
+        	prev.setAttribute('style', 'display: block');
+        })
+
+            imagemSeis.addEventListener('click', function(){
+        	//Appendchild tem que ser inserido localmente!
+        	let corpo = document.querySelector('body').appendChild(cria)
+        	cria.classList.add("containerDois");
+        	cria.appendChild(img);
+        	img.src = "image/image-6.jpg";
+        	close.setAttribute('style', 'display: block');
+        	next.setAttribute('style', 'display: block');
+        	prev.setAttribute('style', 'display: block');
+        })
+            imagemSete.addEventListener('click', function(){
+        	//Appendchild tem que ser inserido localmente!
+        	let corpo = document.querySelector('body').appendChild(cria)
+        	cria.classList.add("containerDois");
+        	cria.appendChild(img);
+        	img.src = "image/image-7.jpg";
+        	close.setAttribute('style', 'display: block');
+        	next.setAttribute('style', 'display: block');
+        	prev.setAttribute('style', 'display: block');
+        })
+            imagemOito.addEventListener('click', function(){
+        	//Appendchild tem que ser inserido localmente!
+        	let corpo = document.querySelector('body').appendChild(cria)
+        	cria.classList.add("containerDois");
+        	cria.appendChild(img);
+        	img.src = "image/image-8.jpg";
+        	close.setAttribute('style', 'display: block');
+        	next.setAttribute('style', 'display: block');
+        	prev.setAttribute('style', 'display: block');
+        })
+            imagemNove.addEventListener('click', function(){
+        	//Appendchild tem que ser inserido localmente!
+        	let corpo = document.querySelector('body').appendChild(cria)
+        	cria.classList.add("containerDois");
+        	cria.appendChild(img);
+        	img.src = "image/image-9.jpg";
+        	close.setAttribute('style', 'display: block');
+        	next.setAttribute('style', 'display: block');
+        	prev.setAttribute('style', 'display: block');
+        })
+             imagemDez.addEventListener('click', function(){
+        	//Appendchild tem que ser inserido localmente!
+        	let corpo = document.querySelector('body').appendChild(cria)
+        	cria.classList.add("containerDois");
+        	cria.appendChild(img);
+        	img.src = "image/image-10.jpg";
+        	close.setAttribute('style', 'display: block');
+        	next.setAttribute('style', 'display: block');
+        	prev.setAttribute('style', 'display: block');
+        })
+
+        close.addEventListener('click', function(){
+        	cria.remove("div.containerDois");
+        	this.setAttribute('style', 'display: none')
+        	next.setAttribute('style', 'display: none');
+        	prev.setAttribute('style', 'display: none');
+        })
+
+
+         // Botões para troca de imagens!
+           let s = 2;
+          // Incremento!
+           next.addEventListener('click', function(){
+        	 for ( contador  = 1 ;  contador <= 10 ; contador ++ ) {
+             img.src = "image/image-"+s+".jpg";        
+	       }
+	       s ++ ;
+	       if ( s >= contador ) {
+	          	s = 1 ;
+          }
+        })
+           
+           // Decremento!
+           let d = 10;
+           prev.addEventListener('click', function(){
+        	 for ( contador  = 10 ;  contador >= 1 ; contador -- ) {
+             img.src = "image/image-"+d+".jpg";        
+	       }
+	       d--;
+	       if ( d <= contador ) {
+	          	d = 10 ;
+          }
+        })
+        }
+   </script>
+</body>
+</html>
